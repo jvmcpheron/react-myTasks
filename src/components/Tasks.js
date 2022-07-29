@@ -1,14 +1,18 @@
 import Task from './Task';
 
 
-const Tasks = ({ tasks }) => {
+const Tasks = () => {
 
 
     return(
         <div>
-            {tasks.map((task)=>(
-                <Task key={task.id} task={task}/>
-            ))}
+            <Task day="Sunday" />
+            <Task day="Monday" />
+            <Task day="Tuesday" />
+            <Task day="Wednesday" />
+            <Task day="Thursday" />
+            <Task day="Friday" />
+            <Task day="Saturday" />
         </div>
     )
 }

@@ -1,21 +1,19 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import Navbar from './components/Navbar';
+import Title from './components/Title';
 import Tasks from './components/Tasks';
-import {useState} from 'react';
+import Script from "./components/Script.js";
 
 function App() {
-  const [tasks , setTasks] = useState ([
-    
-  ]);
-
 
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar />
+        <Title />
       </header>
-        <Tasks tasks={tasks}/>
+        <div className="row mt-4"></div>
+        <Tasks />
+        <Script />
     </div>
   );
 }
