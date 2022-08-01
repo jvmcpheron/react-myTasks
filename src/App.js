@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Title from './components/Title';
 import Tasks from './components/Tasks';
 import Script from "./components/Script.js";
+import DeleteBtn from "./components/DeleteBtn.js";
+
 
 function App() {
 
@@ -13,6 +15,7 @@ function App() {
       </header>
         <div className="row mt-4"></div>
         <Tasks />
+        <DeleteBtn />
         <Script />
     </div>
   );
